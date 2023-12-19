@@ -51,6 +51,8 @@ document.addEventListener("keydown", function (e) {
 
 // open modal function
 const openModal = function () {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0;
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
